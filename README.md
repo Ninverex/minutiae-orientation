@@ -10,10 +10,8 @@ Celem projektu jest estymacja kierunku lokalnego przebiegu grzbietów linii papi
 1. **Wczytanie obrazu odcisku palca** – obraz w skali szarości.
 2. **Filtracja Gaussa** – redukcja szumu przed obliczeniem gradientów .
 3. **Obliczenie gradientów** intensywności w kierunkach X i Y za pomocą filtrów Sobela.
-4. **Estymacja orientacji**:
-   \[
-   \theta(x, y) = \arctan2(G_y(x, y), G_x(x, y))
-   \]
+4. **Estymacja orientacji**:  
+   ![image](https://github.com/user-attachments/assets/b5418582-de43-4686-8ade-77f694594e9e)  
 5. **Uśrednianie lokalne** – podział obrazu na bloki (np. 16×16 pikseli) i wyznaczenie średniej orientacji w każdym z nich.
 6. **Wizualizacja wyników** – narysowanie orientacji jako pole wektorowe (quiver plot).
 7. **Porównanie orientacji** przed i po filtracji Gaussa.
